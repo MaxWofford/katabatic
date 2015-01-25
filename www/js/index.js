@@ -53,11 +53,12 @@ app.initialize();
 // Custom code:
 
 function onSuccess(heading) {
-    alert('Heading: ' + heading.magneticHeading);
+    console.log('Heading: ' + heading.magneticHeading);
+    document.getElementById('output').innerHTML = heading.magneticHeading;
 };
 
 function onError(error) {
-    alert('CompassError: ' + error.code);
+    console.warn('CompassError: ' + error.code);
 };
 
 navigator.compass.getCurrentHeading(onSuccess, onError);
