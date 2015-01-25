@@ -1,0 +1,9 @@
+{
+    "lib": {
+        "www": {
+            "id": "com.example.compass",
+            "version": "master",
+            "link": false
+        }
+    }
+}
